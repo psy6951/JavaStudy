@@ -25,7 +25,7 @@ public class E05MethodType04_2 {
 	static int returnMaxNumber(int numberCnt) {
 		
 		Scanner scanner = new Scanner(System.in);
-		//최대값을 저장할 변수
+		//최대값을 저장할 변수 maxVal설정. 값을 안주면 아래에서 오류가 발생하므로 임의값 입력
 		int maxVal = 0;
 		//매개변수로 전달된 인수의 크기만큼 반복한다.
 		for(int i=1 ; i<=numberCnt ; i++) {
