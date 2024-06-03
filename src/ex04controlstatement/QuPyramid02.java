@@ -13,17 +13,30 @@ public class QuPyramid02 {
 
 	public static void main(String[] args) {
 		
-		 int i = 5; // 행을 위한 변수, 초기값은 5로 설정
-	        
-	        do {
-	            int j = 1; // 각 행의 별 출력을 위한 변수
-	            do {
-	                System.out.print("* ");
-	                j++;
-	            } while (j <= i);
-	            System.out.println(); // 행이 끝나면 줄바꿈
-	            i--;
-	        } while (i > 0);
+//		 int i = 5; // 행을 위한 변수, 초기값은 5로 설정
+//	        
+//	        do {
+//	            int j = 1; // 각 행의 별 출력을 위한 변수
+//	            do {
+//	                System.out.print("* ");
+//	                j++;
+//	            } while (j <= i);
+//	            System.out.println(); // 행이 끝나면 줄바꿈
+//	            i--;
+//	        } while (i > 0);
+		
+		int x = 5;
+		do {
+			int y =1;
+			do {
+				System.out.print("* ");
+				y++;
+			} while(y<=x);
+			x--;
+			System.out.println();
+		}
+		while(x>=1);
+		
 
 
 	}

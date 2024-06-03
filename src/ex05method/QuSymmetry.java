@@ -1,4 +1,4 @@
-package ex04controlstatement;
+package ex05method;
 
 public class QuSymmetry {
 
