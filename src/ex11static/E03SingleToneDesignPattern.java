@@ -77,8 +77,8 @@ public class E03SingleToneDesignPattern {
 		st3.print();
 		
 		//위에서 얻어온 참조값은 결국 하나의 값이 출력된다.
-		System.out.println(String.format("st2의주소: %s", st2));
-		System.out.println(String.format("st3의주소: %s", st3));
+		System.out.println(String.format("st2의주소: %s", st2));//100
+		System.out.println(String.format("st3의주소: %s", st3));//200
 		
 		//결국 동일한 인스턴스를 사용한 것이므로 마지막에 할당된 200이 출력된다.
 		System.out.println(String.format("st2의 shareVar: %d", st2.shareVar));//200
