@@ -8,6 +8,8 @@ import java.util.Scanner;
  이와 같이 데이터를 저장하기 위한 용도의 클래스를 VO(Value Object)라고 한다.
  즉 값만 가진 객체라는 뜻이다.
  */
+
+//Friend, HighFriend, UnivFriend 클래스
 class Friend {
 	//멤버변수: 이름,전화번호,주소 기본정보 3가지를 저장한다.
 	String name;
