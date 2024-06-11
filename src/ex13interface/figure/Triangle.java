@@ -1,0 +1,24 @@
+package ex13interface.figure;
+
+/*
+ 삼각형을 표현한 클래스로 사각형과 동일한 형태로 정의되어 있다.
+ 단, 넓이를 구하는 방식만 다르므로 오버라이딩한 메서드에서 
+ 0.5를 추가로 곱해주어야 한다.
+ */
+public class Triangle extends FigureData implements IFigure, IDrawable {
+	
+	int radius;
+	public Triangle(int width, int height) {
+		super(width,height);
+	}
+	
+	@Override
+	public void draw(String figureName) {
+		System.out.println(figureName+"을 그립니다");
+	}
+	@Override
+	public void area(String figureName) {
+		System.out.println(figureName+"의 면적은(밑변*높이*0.5):"+ (width*height*0.5));
+	}
+	
+}
