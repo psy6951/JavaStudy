@@ -32,6 +32,6 @@ public class Human {
 	public void setScore(int score) {
 		this.score = score;
 	}
-
 }
+
 //생성자, getter, setter 자동생성메뉴 사용(우클릭->source->generate~~)
