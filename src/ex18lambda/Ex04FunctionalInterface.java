@@ -1,4 +1,4 @@
-package ex16lambda;
+package ex18lambda;
 
 /*
  함수형 인터페이스
