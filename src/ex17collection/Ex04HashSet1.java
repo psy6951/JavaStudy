@@ -10,7 +10,7 @@ import common.Teacher;
  HashSet<E>	: set계열의 컬렉션
  -set 계열의 인터페이스를 구현한 컬렉션
  -인스턴스가 순서없이 저장된다.
- -인스턴스의 중ㅈ복저장을 허용하지 않는다.
+ -인스턴스의 중복저장을 허용하지 않는다.
  -기본클래스(String, Integer)인 경우 별도의 처리 없이 중복이 제거된다.
  -개발자가 정의한 클래스라면 hashCode(), equals()메서드를 
   적절히 오버라이딩해야만 중복을 제거할 수 있다.
@@ -27,7 +27,7 @@ public class Ex04HashSet1 {
 		//아래 2개문장도 위와 동일한 인스턴스 생성 문장으로 사용가능
 //		HashSet<Object>  set = new HashSet<Object>();
 //		HashSet set = new HashSet();
-		HashSet<Object>  set = new HashSet<>();
+		HashSet<Object> set = new HashSet<>();
 
 		/*
 		 3가지의 기본클래스와 우리가 정의한 Teacher 클래스의 인스턴스를 생성한다.
@@ -63,7 +63,7 @@ public class Ex04HashSet1 {
 		 이터레이터를 통한 인스턴스 출력: 순서 없이 저장되므로 출력 순서도 정할 수 없다.
 		 */
 		//1. set참조변수를 통해 Iterator 인스턴스를 생성
-		Iterator itr = set.iterator();
+		Iterator itr = set.iterator(); 
 		//2. 인출할 인스턴스가 있는지 확인
 		while(itr.hasNext()){
 			//3. true가 반환되면 next()를 통해 인출
