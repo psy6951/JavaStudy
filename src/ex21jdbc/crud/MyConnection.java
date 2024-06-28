@@ -16,7 +16,7 @@ public class MyConnection implements IConnect {
 	public ResultSet rs; //select결과를 반환받기 위한 인스턴스
 	public Statement stmt; //정적쿼리문 실행
 	public PreparedStatement psmt; //동적쿼리문 실행
-	public CallableStatement scmt;//프로시져 실행
+	public CallableStatement csmt;//프로시져 실행
 	
 	//생성자: DB연결을 처리
 	public MyConnection(String user, String pass) {
@@ -38,17 +38,16 @@ public class MyConnection implements IConnect {
 	 반드시 오버라이딩 해야하는 규칙이 생기므로 인터페이스를 클래스 상속간의 설계도라 표현한다.
 	 */
 	@Override
-	public void dbExecute() {
-	}
+	public void dbExecute() {}
 
 	@Override
 	public void dbClose() {
 		try {
-			if(con!=null)con.close();
-			if(con!=null)con.close();
-			if(con!=null)con.close();
-			if(con!=null)con.close();
-			if(con!=null)con.close();
+			if(con!=null) con.close();
+			if(rs!=null) rs.close();
+			if(stmt!=null) stmt.close();
+			if(psmt!=null) psmt.close();
+			if(csmt!=null) csmt.close();
 			System.out.println("DB 자원반납");
 		}
 		catch(Exception e) {
@@ -60,7 +59,7 @@ public class MyConnection implements IConnect {
 	@Override
 	public String inputValue(String title) {
 		Scanner scan= new Scanner(System.in);
-		System.out.println(title+"을(를) 입력(exit->종료):");
+		System.out.println(title +"을(를) 입력(exit->종료):");
 		String inputStr = scan.nextLine();
 		//대소문자 없이 exit라고 입력하면
 		if("EXIT".equalsIgnoreCase(inputStr)) {

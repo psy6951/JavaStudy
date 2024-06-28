@@ -19,10 +19,10 @@ public class SQLupdate extends MyConnection {
 			//Java에서 쿼리문 작성시 예약어는 대문자로 기술하는 것이 가독성이 좋음
 			query = "UPDATE member "
 					+ " SET "
-					+ " pass='0412',"
-					+ " name= '김철수'"
-					+ " regidate=sysdate "
-					+ " WHERE id = 'test1";
+					+ "   pass='0412',"
+					+ "   name='김철수',"
+					+ "   regidate=sysdate "
+					+ " WHERE id ='test1' ";
 			//update가 적용된 행의 개수가 반환됨
 			result = stmt.executeUpdate(query);
 			System.out.println("[stmt]"+ result + "행 업데이트됨");
@@ -50,7 +50,7 @@ public class SQLupdate extends MyConnection {
 		}
 	}	
 	public static void main(String[] args) {
-		new SQLinsert("study", "1234").dbExecute();
+		new SQLupdate("study", "1234").dbExecute();
 
 	}
 

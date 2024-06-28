@@ -37,7 +37,7 @@ public class DBConnect {
 				System.out.println("Oracle 연결실패");
 			}
 		}
-		catch (Exception e){
+		catch(Exception e){
 			System.out.println("Oracle 연결시 예외발생");
 			e.printStackTrace();
 		}
