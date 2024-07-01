@@ -13,7 +13,7 @@ public class MyConnection implements IConnect {
 	
 	//멤버변수
 	public Connection con; //DB연결
-	public ResultSet rs; //select결과를 반환받기 위한 인스턴스
+	public ResultSet rs; //select 결과를 반환받기 위한 인스턴스
 	public Statement stmt; //정적쿼리문 실행
 	public PreparedStatement psmt; //동적쿼리문 실행
 	public CallableStatement csmt;//프로시져 실행

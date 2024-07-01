@@ -24,7 +24,7 @@ public class SQLinsert extends MyConnection {
 			stmt = con.createStatement();
 			//insert 쿼리문 작성
 			query = "INSERT INTO member VALUES "
-					+ " ('test4', '4444', '테스터4', sysdate)";
+					+ " ('test1', '1111', '테스터1', sysdate)";
 			//쿼리실행 및 결과반환
 			result = stmt.executeUpdate(query);
 			//insert 성공시 1, 실패시 0을 반환한다.
